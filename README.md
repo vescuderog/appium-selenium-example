@@ -1,5 +1,6 @@
 # Appium & Selenium example
 
+![Python application](https://github.com/vescuderog/appium-selenium-example/workflows/Python%20application/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Basic example of test cases with Appium and Selenium
@@ -43,13 +44,6 @@ deactivate
 * `BROWSERSTACK_ACCESS_KEY` - BrowserStack [access key](https://www.browserstack.com/app-automate/rest-api)
 * `FACEBOOK_EMAIL` - Facebook username to log in to Facebook in the Selenium test
 * `FACEBOOK_PASS` - Facebook password to log in to Facebook in the Selenium test
-
-BROWSERSTACK_USER=vctorescudero1
-BROWSERSTACK_ACCESS_KEY=fDGDrDDk9b8KGFnayrmo
-FACEBOOK_EMAIL
-FACEBOOK_PASS
-
-Añadir a keepass
 
 ## Usage
 
