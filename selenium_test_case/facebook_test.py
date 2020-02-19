@@ -31,7 +31,7 @@ class FacebookTestCase(unittest.TestCase):
 
         # Test that login was successful by checking if the URL in the browser changed
         try:
-            page_loaded = wait.until_not(
+            wait.until_not(
                 lambda browser: browser.current_url == self.url
             )
         except TimeoutException:
