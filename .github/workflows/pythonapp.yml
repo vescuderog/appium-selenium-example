@@ -15,10 +15,10 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        apt-get update
-        apt-get install -y unzip xvfb libxi6 libgconf-2-4
-        apt-get -y install firefox
-        wget https://github.com/mozilla/geckodriver/releases/download/v0.25.0/geckodriver-v0.25.0-linux64.tar.gz
+        sudo apt-get update
+        sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
+        sudo apt-get -y install firefox
+        sudo wget https://github.com/mozilla/geckodriver/releases/download/v0.25.0/geckodriver-v0.25.0-linux64.tar.gz
         tar xzf geckodriver-v0.25.0-linux64.tar.gz
         sudo mv geckodriver /usr/bin/geckodriver
         python -m pip install --upgrade pip
