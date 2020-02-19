@@ -18,8 +18,8 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
         sudo apt-get -y install firefox
-        sudo wget https://github.com/mozilla/geckodriver/releases/download/v0.25.0/geckodriver-v0.25.0-linux64.tar.gz
-        tar xzf geckodriver-v0.25.0-linux64.tar.gz
+        sudo wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz
+        tar xzf geckodriver-v0.26.0-linux64.tar.gz
         sudo mv geckodriver /usr/bin/geckodriver
         python -m pip install --upgrade pip
         pip install -r requirements.txt
@@ -35,5 +35,7 @@ jobs:
         BROWSERSTACK_USER: ${{ secrets.BROWSERSTACK_USER }}
         BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
       run: |
+        Xvfb :99 &
+        export DISPLAY=:99
         pip install pytest
         pytest --ignore=selenium_test_case/facebook_test.py
