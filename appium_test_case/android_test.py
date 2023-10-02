@@ -26,9 +26,9 @@ class AndroidTests(unittest.TestCase):
         # BrowserStack automate
         desired_caps = {
             'browserName': 'Chrome',
-            'device': 'Google Nexus 6',
+            'device': 'Google Pixel 7',
             'realMobile': 'true',
-            'os_version': '6.0'
+            'os_version': '13.0'
         }
         self.driver = webdriver.Remote(
             command_executor='http://' + os.getenv('BROWSERSTACK_USER') + ':' + os.getenv(
