@@ -13,9 +13,9 @@ class IosTests(unittest.TestCase):
     def setUp(self):
         desired_caps = {
             'browserName': 'Safari',
-            'device': 'iPhone 8 Plus',
+            'device': 'iPhone 14 Plus',
             'realMobile': 'true',
-            'os_version': '11'
+            'os_version': '16'
         }
         self.driver = webdriver.Remote(
             command_executor='http://' + os.getenv('BROWSERSTACK_USER') + ':' + os.getenv(
